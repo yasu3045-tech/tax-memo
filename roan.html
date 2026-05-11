@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>住宅ローン・モバイル攻略ガイド</title>
+    <style>
+        :root {
+            --primary: #1a365d;
+            --secondary: #3182ce;
+            --accent: #f6ad55;
+            --success: #38a169;
+            --bg: #f7fafc;
+            --card-bg: #ffffff;
+            --text: #2d3748;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            border-bottom-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+        }
+
+        header h1 { font-size: 1.5rem; margin: 0; font-weight: 800; }
+        header p { font-size: 0.9rem; opacity: 0.9; margin-top: 0.5rem; }
+
+        .container { padding: 1rem; max-width: 500px; margin: 0 auto; }
+
+        /* クイックナビ */
+        .quick-nav {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: -20px;
+            margin-bottom: 20px;
+        }
+
+        .quick-nav a {
+            background: var(--card-bg);
+            padding: 12px;
+            text-align: center;
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--primary);
+            font-size: 0.85rem;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        section {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            margin-top: 0;
+        }
+
+        h2::before {
+            content: "■";
+            color: var(--secondary);
+            margin-right: 8px;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+            border-left: 4px solid var(--secondary);
+            padding-left: 10px;
+        }
+
+        /* モバイル用テーブル */
+        .table-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 1rem -0.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            min-width: 450px;
+        }
+
+        th, td {
+            padding: 12px 8px;
+            border-bottom: 1px solid #edf2f7;
+            text-align: left;
+        }
+
+        th { background: #f8f9fa; color: var(--primary); }
+
+        /* カード形式の強調表示 */
+        .spec-card {
+            background: #ebf8ff;
+            border-left: 4px solid var(--secondary);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        .alert-card {
+            background: #fff5f5;
+            border-left: 4px solid #f56565;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        .check-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .check-list li::before {
+            content: "✓";
+            color: var(--success);
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .badge {
+            background: var(--accent);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.8rem;
+            color: #a0aec0;
+        }
+
+        /* スムーススクロール */
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>住宅ローン完全攻略</h1>
+    <p>スマホで確認！損をしないための全仕様</p>
+</header>
+
+<div class="container">
+    <div class="quick-nav">
+        <a href="#logic">審査のロジック</a>
+        <a href="#banks">銀行の比較</a>
+        <a href="#costs">諸費用のデバッグ</a>
+        <a href="#zeh">ZEHの威力</a>
+    </div>
+
+    <section id="logic">
+        <h2>審査はこう決まる！</h2>
+        <p>銀行はあなたの「返済能力」と「物件の担保価値」をプログラムのように評価します。</p>
+        
+        
+
+        <div class="spec-card">
+            <strong>評価アップの3大フラグ：</strong>
+            <ul class="check-list">
+                <li>自己資金（頭金）が2割以上</li>
+                <li>借入倍率が年収の5倍以内</li>
+                <li>直近3年の所得が安定している</li>
+            </ul>
+        </div>
+        <p>※自営業の場合、所得（経費除き）の安定性が最も重視されます。</p>
+    </section>
+
+    <section id="banks">
+        <h2>銀行選びの分岐点</h2>
+        <p>金利だけでなく「手続きの手間」と「団信」で選びます。</p>
+        
+        
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>項目</th>
+                        <th>ネット銀行</th>
+                        <th>地方銀行</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>金利</strong></td>
+                        <td>低 (0.3〜0.5%)</td>
+                        <td>中 (0.5〜0.9%)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>保証料</strong></td>
+                        <td>0円</td>
+                        <td>数十万円〜</td>
+                    </tr>
+                    <tr>
+                        <td><strong>団信</strong></td>
+                        <td>がん保障等充実</td>
+                        <td>標準的</td>
+                    </tr>
+                    <tr>
+                        <td><strong>審査</strong></td>
+                        <td>システム的</td>
+                        <td>柔軟・対面</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="zeh">
+        <h2>ZEH水準住宅の特権 <span class="badge">最重要</span></h2>
+        <p>今の物件が「ZEH水準」なら、以下のボーナスが適用されます。</p>
+        
+        
+
+        <div class="spec-card">
+            <h3>1. 特別優遇金利</h3>
+            <p>標準プランからさらに年0.1〜0.2%程度の金利引き下げ。</p>
+            <h3>2. 住宅ローン控除の拡大</h3>
+            <p>借入限度額がアップし、13年間で戻ってくる税金が最大化されます。</p>
+        </div>
+    </section>
+
+    <section id="costs">
+        <h2>諸費用のデバッグ項目</h2>
+        <div class="alert-card">
+            <strong>注意：</strong>チラシの「定価」で納得せず、調整（リファクタリング）を試みましょう。
+        </div>
+        
+        <h3>交渉可能なコスト</h3>
+        <ul class="check-list">
+            <li><strong>仲介手数料:</strong> 上限額からの調整。</li>
+            <li><strong>融資代行料:</strong> 自分で手続きするならカット。</li>
+            <li><strong>火災保険:</strong> ネット系損保で安くなる。</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>木曜日の決戦アジェンダ</h2>
+        <ul class="check-list">
+            <li>3号棟×ネット銀行の最終見積もり</li>
+            <li>ZEH証明書（BELS等）の有無確認</li>
+            <li>仲介手数料の「誠意」の引き出し</li>
+            <li>6/26引渡しまでのガントチャート確認</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2026 住宅ローン攻略ガイド<br>安田様＆みぃちゃん専用版</p>
+    </footer>
+</div>
+
+</body>
+</html>
